@@ -1,0 +1,5 @@
+crypto_database: 
+  hostname: mongodb
+  port: 27017
+  database_name: crypto_database
+  collection_name: crypto_collection
