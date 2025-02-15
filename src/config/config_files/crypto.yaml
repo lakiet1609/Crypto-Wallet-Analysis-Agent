@@ -1,0 +1,11 @@
+common:
+  data_path: data/wallet_addresses.txt
+  etherscan_base_url: https://etherscan.io/address
+
+agent:
+  model: gpt-4o-mini
+  chatbot_model_name: meta-llama/Llama-3.2-3B-Instruct
+  rate_limit_delay: 2
+  temperature: 0.0
+  top_p: 0.8
+  max_tokens: 2000

@@ -9,7 +9,7 @@ from src.config.app_config import Config as cfg
 
 class BaseDatabase(object):
     def __init__(self, config):
-        self.host_name = config['host_name']
+        self.host_name = config['hostname']
         self.port = config['port']
         self.user = cfg.DATABASE_USER
         self.password = cfg.DATABASE_PASSWORD
