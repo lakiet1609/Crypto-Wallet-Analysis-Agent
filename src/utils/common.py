@@ -38,3 +38,25 @@ def post_process_result(data):
         return data_dict
     else:
         return None
+
+
+def write_json_to_text(data, output_text_file):
+    try:
+        first_transaction = data.get("First Transaction", "Unknown Date")
+        wallet_age = data.get("Wallet Age", "Unknown Age")
+        category = data.get("Category", "Unknown Category")
+        analysis = data.get("Analysis", "No Analysis Available")
+
+        formatted_text = f"""\
+            First Transaction: {first_transaction}
+            Wallet Age: {wallet_age}
+            Category: {category}
+            Analysis: {analysis}
+            """
+        with open(output_text_file, 'w', encoding='utf-8') as f:
+            f.write(formatted_text)
+        
+        print(f"Data successfully written to {output_text_file}")
+
+    except Exception as e:
+        print(f"Error: {e}")

@@ -35,6 +35,10 @@ class CryptoConfig:
     max_tokens = agent_cfg['max_tokens']
     
     data_path = common_cfg['data_path']
+    wallet_age_report_path = common_cfg['wallet_age_report_path']
+    trend_analysis_report_path = common_cfg['trend_analysis_report_path']
+    transaction_analysis_report_path = common_cfg['transaction_analysis_report_path']
+    behavioral_classification_path = common_cfg['behavioral_classification_path']
     etherscan_base_url= common_cfg['etherscan_base_url']
 
     

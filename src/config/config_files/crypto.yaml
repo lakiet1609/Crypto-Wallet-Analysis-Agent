@@ -1,5 +1,9 @@
 common:
   data_path: data/wallet_addresses.txt
+  trend_analysis_report_path: output/trend_analysis_report.txt
+  transaction_analysis_report_path: output/transaction_analysis_report.txt
+  behavioral_classification_path: output/behavioral_classification_report.txt
+  wallet_age_report_path: output/wallet_age_report.txt
   etherscan_base_url: https://etherscan.io/address
 
 agent:
