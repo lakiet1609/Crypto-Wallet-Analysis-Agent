@@ -1,0 +1,5 @@
+pymongo==4.11.1
+openai==1.63.0
+langchain==0.3.14
+langchain-openai==0.3.1
+browser-use==0.1.37

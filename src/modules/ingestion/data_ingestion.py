@@ -199,7 +199,3 @@ class DataIngestionAgent:
         asyncio.run(self.process_wallets(self.wallet_file))
         logging.info('Data Ingestion Agent completed successfully')
 
-
-if __name__ == '__main__':
-    agent = DataIngestionAgent()
-    agent.run()

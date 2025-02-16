@@ -56,7 +56,30 @@ def write_json_to_text(data, output_text_file):
         with open(output_text_file, 'w', encoding='utf-8') as f:
             f.write(formatted_text)
         
-        print(f"Data successfully written to {output_text_file}")
+        logging.info(f"Data successfully written to {output_text_file}")
 
     except Exception as e:
-        print(f"Error: {e}")
+        logging.info(f"Error: {e}")
+
+
+def save_trend_analysis_to_file(trend_results, conclusion, filename):
+    with open(filename, "w") as file:
+        file.write("30-Day Trend:\n")
+        file.write(f"- Overall change: {trend_results['30_day_trend']['overall_change']}\n")
+        file.write(f"- Notable changes: {trend_results['30_day_trend']['notable_changes']}\n")
+        file.write(f"- Transaction patterns: {trend_results['30_day_trend']['transaction_patterns']}\n")
+
+        file.write("\n90-Day Trend:\n")
+        file.write(f"- Overall change: {trend_results['90_day_trend']['overall_change']}\n")
+        file.write(f"- Notable changes: {trend_results['90_day_trend']['notable_changes']}\n")
+        file.write(f"- Transaction patterns: {trend_results['90_day_trend']['transaction_patterns']}\n")
+
+        file.write("\n180-Day Trend:\n")
+        file.write(f"- Overall change: {trend_results['180_day_trend']['overall_change']}\n")
+        file.write(f"- Notable changes: {trend_results['180_day_trend']['notable_changes']}\n")
+        file.write(f"- Transaction patterns: {trend_results['180_day_trend']['transaction_patterns']}\n")
+
+        file.write("\nConclusion:\n")
+        file.write(conclusion)
+
+    logging.info(f"Trend analysis results saved to {filename}")
