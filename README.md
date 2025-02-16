@@ -103,4 +103,4 @@ A centralized logging system (utils/logger.py) tracks important runtime informat
 
 ## Limitations and Assumptions
 1. I have not integrated workflow orchestration
-2. I have not finished the whole project in time. Lack of *Transaction Analysis* and *Behavioral Classification* modules
+2. I have not finished the whole project in time. Lack of `Transaction Analysis` and `Behavioral Classification` modules
